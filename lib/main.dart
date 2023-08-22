@@ -28,10 +28,10 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 2, 189, 223)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: '1° App'),
     );
   }
 }
@@ -106,7 +106,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              ' Olá! Esse é o meu primeiro ',
+              ' Olá! Esse é o meu primeiro APP em Flutter!',
+              style: TextStyle(
+                color: Color.fromARGB(255, 2, 189, 223)
+              ),
             ),
             Text(
               '$_counter',
